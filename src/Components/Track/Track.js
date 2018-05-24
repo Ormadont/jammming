@@ -6,11 +6,7 @@ import './Track.css';
 
 class Track extends Component {
   renderAction(isRemoval) {
-    if (isRemoval) {
-      return '+';
-    } else {
-      return '-';
-    }
+    return isRemoval ? '+' : '-';
   }
   render() {
     return (
